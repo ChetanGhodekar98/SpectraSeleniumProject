@@ -20,4 +20,8 @@ public class ActionsClassUtil {
 		actions.moveToElement(webElement, 100, 0).click().perform();
 	}
 	
+	public void moveToTheCenterOfTheElemnt(WebElement webElement) {
+		actions.moveToElement(webElement).perform();
+	}
+	
 }

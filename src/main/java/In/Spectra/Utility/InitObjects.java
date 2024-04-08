@@ -20,4 +20,12 @@ public class InitObjects {
 		return new ActionsClassUtil(webDriver);
 	}
 	
+	public TakeScreenShotOnFailure getTakeScreenShotOnFailureObject() {
+		return new TakeScreenShotOnFailure();
+	}
+	
+	public SelectClassUtil getSelectClassUtilObject() {
+		return new SelectClassUtil();
+	}
+	
 }

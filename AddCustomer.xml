@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AddCustomer">
+<listeners>
+	<listener class-name="In.Spectra.Utility.ITestListernersUtil"></listener>
+</listeners>
+  <test thread-count="5" name="AddCustomer">
+    <classes>
+      <class name="In.Spectra.Customer.AddCustomer_001_Test"/>
+    </classes>
+  </test> <!-- AddCustomer -->
+</suite> <!-- AddCustomer -->

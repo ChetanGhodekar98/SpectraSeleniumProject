@@ -28,6 +28,9 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//button[text()='create']")
 	private WebElement createCustomerBuutonOnPopUp;
 	
+	@FindBy(xpath = "//p[text()='Customer Created Successfully']")
+	private WebElement customerCreatedSuccessFully;
+	
 	@FindBy(xpath = "//button[text()='Ok']")
 	private WebElement okButton;
 	
@@ -52,4 +55,27 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//p[text()='customer deleted Successfully']")
 	private WebElement deleteCustomerToasterMessage;
 
+	@FindBy(xpath = "(//span[text()='Nikith'])[2]")
+	private WebElement nikithButton;
+	
+	@FindBy(xpath = "//p[text()='Logout']")
+	private WebElement logoutButton;
+	
+	@FindBy(xpath = "//p[text()='customer with given name already exists']")
+	private WebElement customerExistErrorMessage;
+	
+	@FindBy(linkText = "Create Site")
+	private WebElement CreateSiteButton;
+	
+	@FindBy(linkText = "Groups")
+	private WebElement groupLink;
+	
+	@FindBy(xpath = "//button[text()='Create Group']")
+	private WebElement createGroupButton;
+	
+	@FindBy(xpath = "//a[text()='Users']")
+	private WebElement usersLink;
+	
+	@FindBy(xpath = "//button[text()='Create User']")
+	private WebElement createUsersButton;
 }

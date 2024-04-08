@@ -27,8 +27,9 @@ public class ITestListernersUtil extends BaseClass implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		test=extentReports.createTest("EXECUTIO FAILURE");
-		Reporter.log("FAILURE "+result.getName(),true);
 		test.log(Status.FAIL, "EXECUTION FAILED"+result.getName());
+		String path=getTakeScreenShotOnFailureObject().takeScreenShotOn(takesScreenshot);
+		test.addScreenCaptureFromPath(path);
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -36,7 +37,4 @@ public class ITestListernersUtil extends BaseClass implements ITestListener{
 		Reporter.log("SKIPPED "+result.getName(),true);
 		test.log(Status.WARNING, "EXECUTION SKIP"+result.getName());
 	}
-
-	
-	
 }
